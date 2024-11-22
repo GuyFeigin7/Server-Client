@@ -33,4 +33,4 @@ private:
     void SendStr(uid_t linuxID, unsigned int size, int clientSocket);
 }; 
 
-#endif //GF_SERVER
+#endif //GF_SERVERs
