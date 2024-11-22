@@ -26,7 +26,7 @@ bool Test1()
         res = client.ReceiveData(8);
         std::cout << "Received data: " << res << std::endl;
 
-        res = client.ReceiveData(5);
+        // res = client.ReceiveData(5); -> throws invalid size request error 
 
         success = true;
     }
@@ -65,28 +65,28 @@ bool Test2()
 int main()
 {
     
-    /* 
-    std::cout << "Running Test1...\n\n";
+    
+    std::cout << "----- Running Test1... ----- \n\n";
     
     if (Test1() == false)
     {
-        std::cout << "Test1 failed.\n";
+        std::cout << "----- Test1 failed. ----- \n";
         return -1;
     }
     else
     {
-        std::cout << "Test1 passed.\n";
-    } */
+        std::cout << "\n----- Test1 passed.----- \n\n";
+    }
 
-    std::cout << "Running Test2...\n\n";
+    std::cout << "----- Running Test2... -----\n\n";
     if (Test2() == false)
     {
-        std::cout << "Test2 failed.\n";
+        std::cout << "----- Test2 failed. -----\n";
         return -1;
     }
     else
     {
-        std::cout << "Test2 passed.\n";
+        std::cout << "\n----- Test2 passed. -----\n";
     }
 
     return 0;

@@ -6,7 +6,7 @@
 #include <iostream>
 #include <vector>
 
-Client::Client(const std::string &serverAddress_, int serverPort_, uid_t linuxID_) : clientSocket(socket(AF_INET, SOCK_STREAM, 0))
+Client::Client(const std::string &serverAddress_, int serverPort_, uid_t linuxID_) : clientSocket(socket(AF_INET, SOCK_STREAM, 0)), linuxID(linuxID_)
 { 
     if (clientSocket.Get() == -1)
     {
