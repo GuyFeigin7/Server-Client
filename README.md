@@ -4,18 +4,26 @@ The project implements a server-client application on a local Linux machine usin
 
 ### Examples for the client interaction:
 
+
 #### Example1:
 
-sen("thequickbrownfoxjumpsoverthelazydog")
-recv(10) -> abcdeeefgh
-recv(5) -> hijkl
-recv(5) -> mnooo
+    send("thequickbrownfoxjumpsoverthelazydog")
+    
+    recv(10) -> abcdeeefgh
+    
+    recv(5) -> hijkl
+    
+    recv(5) -> mnooo
+
 
 #### Example2:
 
-send("test", 5)
-recv(2) -> es
-send("case", 4)
-recv(4) -> aces
+    send("test")
+    
+    recv(2) -> es
+    
+    send("case")
+    
+    recv(4) -> aces
 
 
